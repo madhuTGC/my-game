@@ -2,6 +2,27 @@
 
 //PLAY IN FULL PAGE VIEW!
 
+// Add this code at the beginning of your JavaScript file
+
+var backgroundMusic = document.getElementById('background-music');
+
+// Function to play or pause the background music
+function toggleMusic() {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+    } else {
+        backgroundMusic.pause();
+    }
+}
+
+// Event listener to play/pause music on user click
+document.addEventListener('click', function() {
+    toggleMusic();
+});
+
+// Optionally, you can add more sophisticated controls, such as a mute button, volume control, etc.
+
+
 
 window.addEventListener("DOMContentLoaded", game);
 
