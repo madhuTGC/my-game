@@ -8,6 +8,20 @@
 // Optionally, you can add more sophisticated controls, such as a mute button, volume control, etc.
 
 
+// Vanilla JS
+
+// Get the audio element
+const backgroundMusic = document.getElementById('background-music');
+
+// Example: Play the audio when the canvas is clicked
+const canvas = document.getElementById('canvas');
+canvas.addEventListener('click', function () {
+  // Play the audio
+  backgroundMusic.play();
+});
+
+
+
 
 window.addEventListener("DOMContentLoaded", game);
 
